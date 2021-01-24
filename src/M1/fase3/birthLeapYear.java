@@ -7,11 +7,7 @@ public class birthLeapYear {
             boolean isLeapYear = false;
             if ((inYear % 4 == 0) && (inYear % 100 != 0 || inYear % 400 == 0)) {
                 isLeapYear = true;
-            } else {
-                isLeapYear = true;
-            }
 
-            if (isLeapYear){
                 leapYearCounter++;
 
                 if (leapYearCounter % 10 != 0) {
