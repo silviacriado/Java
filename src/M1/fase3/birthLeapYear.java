@@ -3,7 +3,8 @@ package M1.fase3;
 public class birthLeapYear {
     public static void main(String[] args) {
 
-        /* Starting from 1948 create a bool to print the leap years until my birth year */
+        // Partint de l’any 1948 heu de fer un bucle for i mostrar
+        // els anys de traspàs arriba al vostre any de naixement
 
         int leapYearCounter = 1948;
         int birthYear = 1978;
@@ -22,7 +23,7 @@ public class birthLeapYear {
                 }
             }
         }
-        /* Variable bool true if birth year is a leap; false if not */
+        // Creeu una variable bool que sera certa si l’any de naixement és de traspàs o falsa si no ho és
 
         if ((birthYear % 4 == 0) && (birthYear % 100 != 0 || birthYear % 400 == 0)) {
             System.out.println(birthYear + " es un año bisiesto");
