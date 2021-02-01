@@ -4,7 +4,9 @@ public class arrayRotation {
     public static void rotateLeft(int array[], int d, int n) {
         for (int i = 0; i < d; i++)
         //calling function without passing the number of rotations
+        {
             rotateArrayByOne(array, n);
+        }
     }
     public static void rotateArrayByOne(int array[], int n) {
         int i, temp;
