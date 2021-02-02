@@ -1,6 +1,6 @@
 package M2.fase1;
 
-public class charName {
+public class CharName {
     public static void main(String[] args) {
         char[] letter = {'S','i','l','v','i','a'};
         String name = new String(letter);
