@@ -18,7 +18,7 @@ public class isLeapYear {
         Scanner sc = new Scanner(System.in);
         leapYear = sc.nextInt();
 
-        if (true) {
+        if ((leapYear % 4 == 0) && (leapYear % 100 != 0 || leapYear % 400 == 0)) {
             System.out.println("Es año bisiesto");
         } else {
             System.out.println("No es un año bisiesto");
