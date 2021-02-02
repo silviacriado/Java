@@ -1,6 +1,6 @@
 package M1.fase1;
 
-public class Date {
+public class date {
     public static void main(String[] args) {
         int day = 15;
         int month = 1;

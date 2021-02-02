@@ -1,6 +1,6 @@
 package M1.nivel3;
 
-public class arrayRotation {
+public class arrayToRotation {
     public static void rotateLeft(int array[], int d, int n) {
         for (int i = 0; i < d; i++)
         //calling function without passing the number of rotations

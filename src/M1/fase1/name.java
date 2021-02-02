@@ -1,6 +1,6 @@
 package M1.fase1;
 
-public class fullName {
+public class name {
     public static void main(String[] args) {
         String name = "Silvia";
         String surname1 = "Criado";

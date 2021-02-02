@@ -1,6 +1,6 @@
 package M1.fase3;
 
-public class birthLeapYear {
+public class birthYear {
     public static void main(String[] args) {
 
         // Partint de l’any 1948 heu de fer un bucle for i mostrar
