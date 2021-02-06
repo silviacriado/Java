@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class ListName {
     public static void main(String[] args) {
-        char[] cName = {'S', 'i', 'l', 'v', 'i', 'a'};
+        char[] cName = {'S', 'i', 'l', 'v', 'i', 'a', 7};
         // Covert char Array into String Array to change it to List
         ArrayList<Character> listComplete = new ArrayList<>();
         for (char c : cName) {
@@ -14,8 +14,8 @@ public class ListName {
                 System.out.println("VOCAL");
             } else if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z')) {
                 System.out.println("CONSONANTE");
-            } else
-                System.out.println("");{
+            } else if ((c >= 0 && c <= 9)){
+                System.out.println("Los nombres no tienen números");
             }
         }
     }
