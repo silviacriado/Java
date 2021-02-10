@@ -1,16 +1,19 @@
 package M2.fase3;
 
+import java.util.HashMap;
+
 public class nameHashMap {
     public static void main(String[] args) {
-        char[] cName = {'S', 'i', 'l', 'v', 'i', 'a'};
-        java.util.HashMap<Character, Integer> name = new java.util.HashMap<Character, Integer>();
-        name.put('S', 0);
-        name.put('i', 1);
-        name.put('l', 2);
-        name.put('v', 3);
-        name.put('i', 4);
-        name.put('a', 5);
+        //Emmagatzemar en un Map tant les lletres de la llista com el nombre de vegades que apareixen
+        //String name = "Silvia";
+        HashMap<Character, Integer> hashName = new HashMap<>();
+        hashName.put('S', 1);
+        hashName.put('i', 2);
+        hashName.put('l', 1);
+        hashName.put('v', 1);
+        hashName.put('a', 1);
 
-        System.out.println(name);
+        System.out.println(hashName);
     }
 }
+
