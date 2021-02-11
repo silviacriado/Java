@@ -3,12 +3,6 @@ package M2.fase4;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- *
- * @author Silvia Criado
- *
- */
-
 public class FullName {
     public static void main(String[] args) {
         String surname = "Criado";
