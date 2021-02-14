@@ -16,10 +16,8 @@ public class Cities {
         scan.next();
         String[] city = {"Barcelona", "Cadiz", "Madrid", "Malaga", "Santander", "Valencia"};
         Arrays.sort(city);
-        if(Arrays.equals(city, city)) {
+        if (Arrays.equals(city, city)) {
             System.out.println(Arrays.toString(city));
-        } else{
-            System.out.println("La ciudad no existe");
         }
     }
 }
