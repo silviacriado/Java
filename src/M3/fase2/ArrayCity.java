@@ -3,7 +3,7 @@ package M3.fase2;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class CityList {
+public class ArrayCity {
     public static void main(String[] args) {
         ArrayList<String> city = new ArrayList<>();
 
