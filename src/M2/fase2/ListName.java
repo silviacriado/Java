@@ -20,7 +20,7 @@ public class ListName {
                 System.out.println("VOCAL");
             } else if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z')) {
                 System.out.println("CONSONANTE");
-            } else if ((c >= 0 && c <= 9)){
+            } else if ((c <= 9)){
                 System.out.println("Los nombres no tienen números");
             }
         }

@@ -8,8 +8,7 @@ public class CityNames {
         Scanner input = new Scanner(System.in);
         System.out.println("Introduce el nombre de estas ciudades: Barcelona, Madrid, Valencia, Malaga, Cadiz y Santader: ");
 
-        ArrayList<String> city = new ArrayList<>();
-
+        ArrayList<String> city = new ArrayList<>(5);
         for (int i = 0; i < 6; i++) {
             System.out.println("Nombre de la ciudad: ");
             city.add(input.next());
@@ -19,5 +18,3 @@ public class CityNames {
         }
     }
 }
-
-
