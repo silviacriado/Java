@@ -11,34 +11,33 @@ class Menu {
 
         Scanner input = new Scanner(System.in);
         System.out.println("Menu del dia: ");
-        System.out.println("1. ensalada tibia de bacalao");
-        System.out.println("2. crema de calabaza");
-        System.out.println("3. hamburguesa con patatas");
-        System.out.println("4. paella de marisco");
+        System.out.println("1. Ensalada tibia de bacalao");
+        System.out.println("2. Crema de calabaza");
+        System.out.println("3. Hamburguesa con patatas");
+        System.out.println("4. Paella de marisco");
 
         System.out.println("Por favor elija uno de estos platos: ");
 
         option = input.nextInt();
 
         switch (option) {
-            case 1:
-                order = "Ensalada tibia de bacalao";
+            case 1 -> {
+                order = "ensalada tibia de bacalao";
                 price = 10;
-                break;
-            case 2:
-                order = "Crema de calabaza";
+            }
+            case 2 -> {
+                order = "crema de calabaza";
                 price = 8;
-                break;
-            case 3:
-                order = "Hamburguesa con patatas";
+            }
+            case 3 -> {
+                order = "hamburguesa con patatas";
                 price = 12;
-                break;
-            case 4:
-                order = "Paella de marisco";
+            }
+            case 4 -> {
+                order = "paella de marisco";
                 price = 15;
-                break;
-            default:
-                order = "No has escogido ningún plato de la carta";
+            }
+            default -> order = "No has escogido ningún plato de la carta";
         }
 
         System.out.println("Has escogido " + order + " y cuesta " + price);
