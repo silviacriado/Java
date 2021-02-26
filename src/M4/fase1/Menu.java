@@ -1,46 +1,43 @@
 package M4.fase1;
 
-import java.util.Scanner;
+import java.util.Arrays;
 
-class Menu {
+public class Menu {
     public static void main(String[] args) {
 
-        int option;
-        String order;
-        int price = 0;
+        //Creamos la primera variable: billetes de 5-500€
+        int[] currency = {5, 10, 20, 50, 100, 200, 500};
+        System.out.println("Original Array:\n" + Arrays.toString(currency));
+    }
 
-        Scanner input = new Scanner(System.in);
-        System.out.println("Menu del dia: ");
-        System.out.println("1. Ensalada tibia de bacalao");
-        System.out.println("2. Crema de calabaza");
-        System.out.println("3. Hamburguesa con patatas");
-        System.out.println("4. Paella de marisco");
+    public static class MenuRestaurant {
 
-        System.out.println("Por favor elija uno de estos platos: ");
+        // this instance variable is visible for any child class.
+        public String menu;
 
-        option = input.nextInt();
+        // price  variable is visible in MenuRestaurant class only.
+        private double price;
 
-        switch (option) {
-            case 1 -> {
-                order = "ensalada tibia de bacalao";
-                price = 10;
-            }
-            case 2 -> {
-                order = "crema de calabaza";
-                price = 8;
-            }
-            case 3 -> {
-                order = "hamburguesa con patatas";
-                price = 12;
-            }
-            case 4 -> {
-                order = "paella de marisco";
-                price = 15;
-            }
-            default -> order = "No has escogido ningún plato de la carta";
+        // The menu variable is assigned in the constructor.
+        public MenuRestaurant(String menuName) {
+            menu = menuName;
         }
 
-        System.out.println("Has escogido " + order + " y cuesta " + price);
+        // The price variable is assigned a value.
+        public void setPrice(double menuPrice) {
+            price = menuPrice;
+        }
 
+        // This method prints the employee details.
+        public void printEmp() {
+            System.out.println("menu  : " + menu);
+            System.out.println("price :" + price);
+        }
+
+        public static void main(String[] args) {
+            MenuRestaurant optionOne = new MenuRestaurant("Ensalada tibia de bacalao");
+            optionOne.setPrice(10.00);
+            optionOne.printEmp();
+        }
     }
 }
