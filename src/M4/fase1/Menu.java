@@ -29,15 +29,23 @@ public class Menu {
         }
 
         // This method prints the employee details.
-        public void printEmp() {
+        public void printMenu() {
             System.out.println("menu  : " + menu);
             System.out.println("price :" + price);
         }
 
         public static void main(String[] args) {
             MenuRestaurant optionOne = new MenuRestaurant("Ensalada tibia de bacalao");
-            optionOne.setPrice(10.00);
-            optionOne.printEmp();
+            optionOne.setPrice(8.50);
+            optionOne.printMenu();
+
+            MenuRestaurant optionTwo = new MenuRestaurant("Lasagna al horno");
+            optionTwo.setPrice(10.50);
+            optionTwo.printMenu();
+
+            MenuRestaurant optionThree = new MenuRestaurant("Fideua");
+            optionThree.setPrice(15.50);
+            optionThree.printMenu();
         }
     }
 }
