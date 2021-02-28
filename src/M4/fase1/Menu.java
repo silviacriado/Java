@@ -8,8 +8,7 @@ import java.util.Scanner;
 public class Menu {
     public static void main(String[] args) {
 
-        //Variable billetes de 5-500€:
-
+        // Variable de billetes de 5-500 Euros.
         int fiveEur = 5;
         int tenEur = 10;
         int twentyEur = 20;
@@ -19,21 +18,19 @@ public class Menu {
         int fiveHundredEur = 500;
 
 
-        //Array del menu y lo rellenamos con los platos que tendra el menu:
+        // Array del menu con los platos que hay para escoger.
         String[] dishes = {"Ensalada mixta", "Lasagna de verduras", "Hamburguesa con patatas", "Lubina al horno"};
-
         ArrayList<String> menu = new ArrayList<>();
         Collections.addAll(menu, dishes);
 
-        //Array de los precios y lo rellenamos con los precios de los platos que tendra el menu
+        // Array de los precios de los platos
         int[] prices = {7, 8, 12, 15};
-
         ArrayList<Integer> dishPrice = new ArrayList<>();
         for (int menuPrice : prices) {
             dishPrice.add(menuPrice);
         }
 
-        // Creo Iterator para mostrar en pantalla los platos ordenados por numero, con su precio.
+        // Lista ordenada de los platos del menú con su precio.
 
         int[] count = {1, 2, 3, 4};
         ArrayList<Integer> dishCount = new ArrayList<>();
@@ -49,16 +46,17 @@ public class Menu {
             System.out.println(ITcount.next() + " " + ITmenu.next() + " cuesta " + ITprice.next() + " €.");
         }
 
-        // Creamos un Array para guardar los precios de los platos escogidos
-        // Rellenamos el Array de pago de forma automática Bucle
+        // Array para guardar el pedido y el pago
 
         ArrayList<Integer> order = new ArrayList<>();
         ArrayList<Integer> pay = new ArrayList<>();
 
+        // Preguntar si quiere comer algo del menu
+        // Recoger la información de pedido
+
         int menuOrder;
         System.out.println();
-        System.out.println("¿Desea algo para comer?, escriba el número del plato que desee escoger");
-        System.out.println("Pulse 0, si no desea ningún plato y quiere finalizar su pedido");
+        System.out.println("¿Desea algo para comer?. Sí, escriba el número del plato. No, pulse 0.");
 
         do {
 
