@@ -4,23 +4,26 @@ import java.util.*;
 
 public class Restaurant {
     public static void main(String[] args) {
+
+        //FASE 1
+
         int[] euros = {5, 10, 20, 50, 100, 200, 500};
 
-        for (int sumTotal : euros) {
-            System.out.println(sumTotal);
+        for (int sum : euros) {
+            System.out.println(sum);
         }
 
         ArrayList<String> menuDishes = new ArrayList<>();
         ArrayList<Integer> menuPrices = new ArrayList<>();
 
-        //double total;
+
+        //FASE 2 y FASE 3
 
         HashMap<String, Integer> menu = new HashMap<>();
         menu.put("Ensalada mixta", 8);
         menu.put("Lasagna de verduras", 10);
         menu.put("Hamburguesa con patatas", 12);
         menu.put("Merluza al horno", 15);
-
 
         for (String menuList : menu.keySet()){
             menuDishes.add(menuList);
@@ -32,14 +35,15 @@ public class Restaurant {
             System.out.println(entry.getKey() + ", precio: " + entry.getValue());
         }
 
+
         // Array para guardar el pedido y el pago
 
         ArrayList<Integer> order = new ArrayList<>();
         ArrayList<Integer> pay = new ArrayList<>();
 
+
         // Preguntar si quiere comer algo del menu
         // Recoger la información de pedido
-
 
         int menuOrder;
         System.out.println();
@@ -51,18 +55,22 @@ public class Restaurant {
             menuOrder = input.nextInt();
             order.add(menuOrder);
 
-            if(menuOrder > 0) {
+            if (menuOrder > 0 && menuOrder <= menuDishes.size()) {
                 System.out.println("Ha escogido " + menuDishes.get(menuOrder - 1) + " y cuesta " + menuPrices.get(menuOrder - 1) + " €.");
                 System.out.println("¿Desea alguna otra cosa más?");
                 pay.add(menuPrices.get(menuOrder - 1));
             } else {
-                System.out.println("Pedido finalizado.");
-                System.out.println();
+                if (menuOrder == 0){
+                    System.out.println("Pedido finalizado.");
+                } else {
+                    System.out.println("El plato no existe. Por favor elija otro plato");
+                }
             }
 
         } while (menuOrder != 0);
 
         // Calculo del precio total del menú escogido.
+
         int sum = 0;
         for (Integer totalMenu : pay) {
             sum = sum + totalMenu;

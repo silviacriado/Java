@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class MenuPrices {
     public static void main(String[] args) {
 
-// Variable de billetes de 5-500 Euros.
+// FASE 1
         int fiveEur = 5;
         int tenEur = 10;
         int twentyEur = 20;
@@ -46,7 +46,7 @@ public class MenuPrices {
             System.out.println(ITcount.next() + " " + ITmenu.next() + " cuesta " + ITprice.next() + " €.");
         }
 
-        // Array para guardar el pedido y el pago
+        // FASE 2
 
         ArrayList<Integer> order = new ArrayList<>();
         ArrayList<Integer> pay = new ArrayList<>();
