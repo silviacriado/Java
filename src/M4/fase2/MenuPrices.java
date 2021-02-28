@@ -17,7 +17,6 @@ public class MenuPrices {
         int twoHundredEur = 200;
         int fiveHundredEur = 500;
 
-
         // Array del menu con los platos que hay para escoger.
         String[] dishes = {"Ensalada mixta", "Lasagna de verduras", "Hamburguesa con patatas", "Lubina al horno"};
         ArrayList<String> menu = new ArrayList<>();
@@ -31,7 +30,6 @@ public class MenuPrices {
         }
 
         // Lista ordenada de los platos del menú con su precio.
-
         int[] count = {1, 2, 3, 4};
         ArrayList<Integer> dishCount = new ArrayList<>();
         for (int menuCount : count) {
@@ -50,6 +48,7 @@ public class MenuPrices {
         ArrayList<Integer> order = new ArrayList<>();
         ArrayList<Integer> pay = new ArrayList<>();
 
+        
         // Preguntar si quiere comer algo del menu
         // Recoger la información de pedido
 
@@ -79,7 +78,7 @@ public class MenuPrices {
                 System.out.println("Has escogido lubina al horno y cuesta " + prices[3] + " €.");
                 System.out.println("¿Desea alguna otra cosa más?");
                 pay.add(15);
-                
+
             } else System.out.println("Pedido completado.");
             System.out.println();
 
