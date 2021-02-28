@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class MenuPrices {
     public static void main(String[] args) {
 
-        // Variable de billetes de 5-500 Euros.
+// Variable de billetes de 5-500 Euros.
         int fiveEur = 5;
         int tenEur = 10;
         int twentyEur = 20;
@@ -16,6 +16,7 @@ public class MenuPrices {
         int hundredEur = 100;
         int twoHundredEur = 200;
         int fiveHundredEur = 500;
+
 
         // Array del menu con los platos que hay para escoger.
         String[] dishes = {"Ensalada mixta", "Lasagna de verduras", "Hamburguesa con patatas", "Lubina al horno"};
@@ -30,6 +31,7 @@ public class MenuPrices {
         }
 
         // Lista ordenada de los platos del menú con su precio.
+
         int[] count = {1, 2, 3, 4};
         ArrayList<Integer> dishCount = new ArrayList<>();
         for (int menuCount : count) {
@@ -45,10 +47,10 @@ public class MenuPrices {
         }
 
         // Array para guardar el pedido y el pago
+
         ArrayList<Integer> order = new ArrayList<>();
         ArrayList<Integer> pay = new ArrayList<>();
 
-        
         // Preguntar si quiere comer algo del menu
         // Recoger la información de pedido
 
@@ -78,7 +80,6 @@ public class MenuPrices {
                 System.out.println("Has escogido lubina al horno y cuesta " + prices[3] + " €.");
                 System.out.println("¿Desea alguna otra cosa más?");
                 pay.add(15);
-
             } else System.out.println("Pedido completado.");
             System.out.println();
 
