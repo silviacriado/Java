@@ -1,4 +1,4 @@
-package M4.fase1;
+package M4.Nivel1;
 
 import java.util.*;
 
@@ -78,5 +78,9 @@ public class Restaurant {
         System.out.println("El precio total de su pedido es de " + sum + " €.");
         System.out.println();
         System.out.println("Muchas gracias por su visita y buen provecho!");
+
+        // Calculo billetes para pagar el total del menú
+
+
     }
 }
