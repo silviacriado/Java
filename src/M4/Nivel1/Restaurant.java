@@ -20,10 +20,10 @@ public class Restaurant {
         //FASE 2 y FASE 3
 
         HashMap<String, Integer> menu = new HashMap<>();
-        menu.put("Ensalada mixta", 8);
-        menu.put("Lasagna de verduras", 10);
-        menu.put("Hamburguesa con patatas", 12);
-        menu.put("Merluza al horno", 15);
+        menu.put("1-Ensalada mixta", 8);
+        menu.put("2-Lasagna de verduras", 10);
+        menu.put("3-Hamburguesa con patatas", 12);
+        menu.put("4-Merluza al horno", 15);
 
         for (String menuList : menu.keySet()){
             menuDishes.add(menuList);
